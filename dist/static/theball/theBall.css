@@ -1,0 +1,26 @@
+.ballFather{
+	position: absolute;
+	width: 0.533333rem;
+	height: 0.533333rem;
+	border-radius: 50%;
+	transition:all  0.6s cubic-bezier(0.65, 0.06, 0.94, 0.31);  
+	/*   */
+	/* y轴很慢  x轴运动很快  1s y走 10 px   x走 20px */
+}
+.ballSon{
+	width: 0.533333rem;
+	height: 0.533333rem;
+	background: #3190e8;
+	border-radius: 50%;
+	transition:all 0.6s linear;
+}
+@keyframes ani{
+	0{transform: scale(0)}
+	20%{transform: scale(1.2)}
+	40%{transform: scale(.8)}
+	80%{transform: scale(1.1)}
+	100%{transform: scale(1)}
+}
+.animation{
+	animation: ani .4s linear;
+}
